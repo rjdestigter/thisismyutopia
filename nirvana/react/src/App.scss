@@ -1,0 +1,29 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.App {
+  height: 100%;
+  display: grid;
+  place-content: center;
+
+  section {
+    label {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    input {
+      line-height: 1.5em;
+      padding: 7px 16px;
+    }
+
+    & + section {
+      margin-top: 15px;
+    }
+  }
+}
